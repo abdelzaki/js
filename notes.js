@@ -105,7 +105,57 @@ let userName = "Ahmed";
 	 console.log(userName)
  }
 username = "newName"
-a() // will print the newName Very important Global variable should be clear 
+a() // will print the newName Very important it is Global variable so that  should be clear 
 
+/*
+-----------------------------------------------------
+DOM
+*/
 
+// DOM : Data Object Modul
 
+	const element = document.getElementById("write-The_ID-Without-#")
+	const element = document.querySelectorAll("div p.some-class") // return list of paragaph which has a certain class
+	element.style.backgroundColor = "white";
+	const liElements = document.querySelectorAll('li');
+	for (const listElement of loElements ){};
+	const lastElemnt = document.querySelector('li:last-of-type');
+	
+	const element = document.querySelector('ul').parentNode // get the first parent it should not be an element or node
+	const element = document.querySelector('ul').parentElementNode // get the first parent it should be an element
+	const element = document.querySelector('ul').closest // get the closest Node abover
+	const element = document.querySelector('ul').firstChild // get the first child Node / element
+	const element = document.querySelector('ul').firstElementChild // get the first child element
+	const element = document.querySelector('ul').lastChild // get the last child Node / element
+	const element = document.querySelector('ul').flastElementChild // get the last child element
+	const element = document.querySelector('ul').previousSibling / nextSibling // get the previous /next sibling node
+	
+	const element = document.querySelector('ul').children[1] // only Element
+	const element = document.querySelector('ul').childNodes // get every thing element and nodes
+	
+// style
+	element.classList.add / remove / toggle
+	
+// create element
+	element.innterHtml("<p> html </p>") -> // it will replace the element with the new element
+	element.insertAdjacementHtml("beforeend",""<p> html </p>"") // it will append
+	
+	
+	const newCreatedElement = document.createElement("li") // u should call this function only on the document to create elemment
+	newCreatedElement.textContent= "write any thing" ;
+	li.appendChild(newCreatedElement); // u create element and then append the element to a certain element 
+	
+	// u have before after replaceWith remove 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
